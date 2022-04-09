@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+body, html {
+    font-family: 'Nunito Sans', sans-serif !important;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .btn-wide {
+        @apply space-x-6 justify-center bg-orange-light hover:bg-yellow-600 h-14 w-64 md:w-64 lg:w-60 xl:w-64 2xl:w-72 text-white hover:text-white;
+    }
+    .btn-short {
+        @apply space-x-2 w-max py-3 px-7 pr-8 rounded-xs;
+    }
+    .btn-orange {
+        @apply bg-orange-light hover:bg-yellow-600 text-white;
+    }
+    .btn-orange-light {
+        @apply bg-orange-lighter hover:bg-orange-light text-orange-light hover:text-white;
+    }
+    .btn-orange-outline {
+        @apply border border-orange-light hover:bg-orange-light text-orange-light hover:text-white;
+    }
+    .btn-green {
+        @apply bg-green-light hover:bg-green-400 text-white;
+    }
+    .btn-green-outline {
+        @apply border border-green-light hover:bg-green-400 hover:text-white text-green-light;
+    }
+    .btn-purple-outline {
+        @apply border-2 border-purple-dark bg-white hover:bg-purple-medium hover:text-white text-purple-medium;
+    }
+    .highlight {
+        @apply  font-bold text-orange-light hover:underline;
+    }
+}

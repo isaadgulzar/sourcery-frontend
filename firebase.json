@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "build",
+    "site":"sourcery-21d2b",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
